@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.secao {
+    width: 90%;
+    margin: auto;
+}
+
+.infos article{
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.infos h2 {
+    margin-bottom: 10px;
+}
+
+.infos div, .infos figure {
+    width: 100%;
+}
+
+.temporario {
+    margin-left: 15px;
+}
+
+.temporario02 {
+    margin-right: 15px;
+}
+
+.temporario, .temporario02 {
+    
+    height: 200px;
+    background-color: brown;
+}
+
+
+/* ---------------------- CONTATOS -------------*/
+
+#contato {
+    background-color: #E1E2EF;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 2px 2px 5px #ffffff1f, -2px -2px 5px #ffffff1f;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 0.5s;
+}
+
+#contato:hover {
+    max-width: 610px;
+    transition: 0.5s;
+    box-shadow: 8px 8px 0px #8200fc99, -8px -8px 0px #9619b2;
+}
+
+#contato h1 {
+    font-family: var(--fonte-titulo);
+
+}
+
+.ilusion {
+    padding: 5px;
+    display: flex;
+    max-width: 250px;
+    align-items: center;
+}
+
+.ilusion img {
+    max-width: 80px;
+    margin-right: 10px;
+}
+
+.ilusion h1 {
+    font-size: 1.2em;
+}
+
+.ilusion p {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #6e0e6e;
+}
+
+.links {
+    font-size: 0.7em;
+    max-width: 200px;
+    padding: 5px;
+}
+
+.links nav {
+    display: flex;
+    justify-content: end;
+    padding: 2px;
+}
+
+
+.links img {
+    margin: 10px;
+    max-width: 25px;
+    padding: 3px;
+}
+
+.links img:hover {
+    transition: 0.2s;
+    border-radius: 5px;
+    background-color: var(--efeito);
+    box-shadow: 0px 0px 10px var(--efeito);
+}
+
+/* ----------- RODAPÉ ------*/
+
+.rodape {
+    background-color: #E1E2EF;
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 580px) {  
+    .infos article {
+        flex-direction: column;
+    }
+
+    .part2 article {
+        flex-direction: column-reverse;
+    }
+
+    .infos div, .infos figure {
+        width: 100%;
+    }
+
+    .temporario, .temporario02 {
+        height: 200px;
+        margin-top: 10px;
+        margin-left: 0px;
+        background-color: rgb(42, 147, 165);
+    }
+}

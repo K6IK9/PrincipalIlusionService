@@ -1,0 +1,36 @@
+.sec_galeria, .sec_galeria02 {
+    width: 100%;
+    padding-left: 3%;
+    overflow: hidden;
+}
+
+.primeira h1 {
+    padding: 150px 0px 5px 0px;
+    width: 90%;
+    margin: auto;
+}
+
+.segunda h1 {
+    padding: 5px 0px;
+    width: 90%;
+    margin: auto;
+}
+  
+.conteudo, .conteudo02 {
+    white-space: nowrap;
+}
+  
+.conteudo figure, .conteudo02 figure {
+    display: inline-block;
+    background-color: chartreuse;
+    width: 92%; /* Defina a largura desejada para as imagens */
+    height: 300px; /* Defina a altura desejada para as imagens */
+    margin: 5px 8px;
+}
+
+@media only screen and (max-width: 580px) {
+    .conteudo figure, .conteudo02 figure {
+        width: 400px; /* Defina a largura desejada para as imagens */
+        height: 150px;
+    }
+}
