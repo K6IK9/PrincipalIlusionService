@@ -19,7 +19,6 @@
 }
 
 
-
 * {
     margin: 0;
     padding: 0;
@@ -30,14 +29,16 @@ body {
     font-family: var(--fonte-padrao);
     line-height: 28px;
     scroll-behavior: smooth;
+    background-image: linear-gradient(to top, var(--fundo) 8%, var(--cor01)30%, #fff );
 }
-
-
 
 .secao {
     width: 90%;
     margin: auto;
 }
+
+
+/*------------- sessões com texto e imagem estática------------*/
 
 .infos article{
     margin: 30px auto;
@@ -67,11 +68,99 @@ body {
 }
 
 .temporario, .temporario02 {
-    
     height: 200px;
     background-color: brown;
 }
 
+
+/*-------------- ESTILO PARA O HEADER ---------*/
+
+.container-top {
+    background-color: #ffffffb4;
+    position: fixed;
+    width: 96%;
+    right: 2%;
+    top: 2%;
+    z-index: 1;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+}
+
+.navegacao-top {
+    padding-top: 5px;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navegacao-top img {
+    max-width: 50px;
+    border-radius: 25px;
+    transition: 1s;
+}
+
+.navegacao-top a {
+    text-decoration: none;
+    color: #000;
+    margin: 12px;
+    padding: 4px 6px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.navegacao-top a:hover {
+    background-color: #000000;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 4px 4px #8200fc99, -4px -4px #9619b2;
+}
+
+.container-top div {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.container-top div img {
+    max-width: 22px;
+    transform: rotate(90deg);
+    margin-top: 9px;
+}
+
+.container-top input {
+    width: 600px;
+    height: 40px;
+    padding: 5px 15px;
+    border-radius: 20px 0px 20px 0px;
+    font-size: 1em;
+    border: none;
+    transition: 0.08s;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #05204A;
+    color: #fff;
+}
+
+.container-top input:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px var(--efeito);
+    width: 601px;
+    height: 42px;
+    transition: 0.08s;
+    margin-top: 8px;
+    margin-left: 7px;
+}
+
+.fundo-top {
+    background-image: linear-gradient(to bottom, var(--fundo) , white);
+    height: 150px;
+}
 
 /* ---------------------- CONTATOS -------------*/
 
@@ -150,16 +239,12 @@ body {
 /* ----------- RODAPÉ ------*/
 
 .rodape {
-    background-color: var(--cor01);
+    background-color: #ffffff7a;
+    backdrop-filter: blur(5px);
     text-align: center;
     font-weight: 500;
     padding: 10px;
 }
-
-
-
-
-
 
 
 @media only screen and (max-width: 580px) {  
@@ -182,3 +267,6 @@ body {
         background-color: rgb(42, 147, 165);
     }
 }
+
+
+
