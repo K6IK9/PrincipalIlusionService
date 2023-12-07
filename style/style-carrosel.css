@@ -42,26 +42,55 @@
   
 .conteudo, .conteudo02 {
     white-space: nowrap;
+    color: var(--cor01);
 }
   
 .conteudo figure, .conteudo02 figure {
     display: inline-block;
-    background-color: chartreuse;
-    width: 65%; /* Defina a largura desejada para as imagens */
-    height: 280px; /* Defina a altura desejada para as imagens */
+    background-color: var(--fundo);
+    width: 500px; /* Defina a largura desejada para as imagens */
+    height: 300px; /* Defina a altura desejada para as imagens */
     margin: 5px 8px;
-    position: relative;
+    border-radius: 15px 15px 25px 25px;
+    box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.345)
+}
+
+.conteudo figure:hover, .conteudo02 figure:hover{ 
+    transition: 0.5s;
+    box-shadow: 4px 4px #8200fc99, -4px -4px #9619b2;
+}
+
+.conteudo div, .conteudo02 div {
+    
+    padding: 20px;
 }
 
 .conteudo img, .conteudo02 img{
     width: 100%;
-    height: 100%;
-    position: absolute;
+    height: 60%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+.segunda {
+    margin-bottom: 100px;
 }
 
 @media only screen and (max-width: 580px) {
     .conteudo figure, .conteudo02 figure {
         width: 400px; /* Defina a largura desejada para as imagens */
         height: 150px;
+    }
+
+    container-top div {
+        justify-content: center;
+    }
+
+    .container-top input {
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .fundo-top {
+        height: 190px;
     }
 }
