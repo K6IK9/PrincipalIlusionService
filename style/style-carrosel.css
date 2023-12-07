@@ -61,7 +61,6 @@
 }
 
 .conteudo div, .conteudo02 div {
-    
     padding: 20px;
 }
 
@@ -78,8 +77,8 @@
 
 @media only screen and (max-width: 580px) {
     .conteudo figure, .conteudo02 figure {
-        width: 400px; /* Defina a largura desejada para as imagens */
-        height: 150px;
+        width: 55%;
+        height: 10%;
     }
 
     container-top div {
